@@ -1,0 +1,531 @@
+/*------------------------------------------------------------
+common
+------------------------------------------------------------*/
+
+body{
+    font-family: 'Noto Sans JP', 'Century Gothic', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 游ゴシック体, YuGothic, "Yu Gothic Medium", 游ゴシック, 'Yu Gothic', メイリオ, Meiryo, sans-serif;
+}
+
+#plan-page {
+    font-size: 14px;
+    font-weight: 400;
+    color: #111111;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+}
+
+#plan-page * {
+    box-sizing: border-box;
+}
+
+#plan-page a {
+    transition: opacity .3s;
+}
+
+#plan-page a[href^="tel:"] {
+    display: inline-block;
+    transition: none;
+}
+
+#plan-page a:hover {
+    text-decoration: none;
+}
+
+#plan-page a:focus-visible {
+    outline: none;
+}
+
+#plan-page img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+
+
+#plan-page .header-entry{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+#plan-page .header-entry img{
+    width: 10.729vw;
+    max-width: 206px;
+}
+#plan-page .infoContent{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+#plan-page .planContent{
+    height: calc(100vh - 136px);
+}
+#plan-page .plan-imageItem .image{
+    position: relative;
+    display: block;
+    height: calc(100vh - 136px);
+}
+#plan-page .plan-imageItem .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+#plan-page .planContent .plan-item-slider01 .info-inner{
+    max-width: 1100px;
+    margin: auto;
+    width: 57.292vw;
+}
+#plan-page .plan-item-slider01 .infoContent{
+    /*top: 181px;*/
+    top: 9.427vw;
+}
+#plan-page .planContent .infoItem{
+    background: rgba(255,255,255,.80);
+}
+#plan-page .planContent .plan-item-slider01 .infoItem{
+    margin-bottom: 0.521vw;
+    padding: 0 3.125vw;
+    /*min-height: 90px;*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 4.688vw;
+}
+#plan-page .planContent .plan-item-slider01 .infoItem .text{
+    /*font-size: 14px;*/
+    /*line-height: 26px;*/
+    font-weight: 500;
+    padding: 6px 0;
+    font-size: 0.729vw;
+    line-height: 1.354vw;
+}
+#plan-page .planContent .plan-item-slider01 .infoItem .ttl{
+    /*font-size: 36px;*/
+    /*line-height: 36px;*/
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding-left: 90px;*/
+    font-size: 1.875vw;
+    line-height: 1.875vw;
+    padding-left: 4.688vw;
+}
+#plan-page .planContent .plan-item-slider01 .info-title .title-item{
+    position: absolute;
+    background: #D7092F;
+    color: #fff;
+    /*font-size: 60px;*/
+    /*line-height: 68px;*/
+    font-weight: 500;
+    /*width: 80px;*/
+    /*min-height: 380px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    /*left: 60px;*/
+    transform: translateY(-50%);
+    font-size: 3.125vw;
+    line-height: 3.542vw;
+    width: 4.167vw;
+    min-height: 19.792vw;
+    left: 3.125vw;
+}
+
+#plan-page .infoContent .info-inner{
+    position: relative;
+}
+#plan-page .plan-item-slider02 .infoContent{
+    top: 10.417vw;
+}
+#plan-page .plan-item-slider02 .infoContent .info-inner{
+    max-width: 1000px;
+    margin: auto;
+}
+#plan-page .plan-item-slider02 .info-title .title-item{
+    font-size: 3.125vw;
+    line-height: 3.542vw;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    max-width: 28.646vw;
+    background: #D7092F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.167vw;
+    margin: 0 auto 1.042vw;
+    padding-bottom: 5px;
+}
+#plan-page .planContent .plan-item-slider02 .infoItem{
+    display: flex;
+    flex-wrap: wrap;
+    height: 4.688vw;
+    align-items: center;
+    margin-bottom: 0.521vw;
+}
+#plan-page .planContent .plan-item-slider02 .infoItem .ttl{
+    width: 15.104vw;
+    font-size: 1.875vw;
+    line-height: 1.875vw;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-left: 0.521vw;
+}
+#plan-page .planContent .plan-item-slider02 .infoItem .ttl span{
+    display: inline-block;
+    border-bottom: 1px solid #D7092F;
+    padding: 8px 0;
+}
+#plan-page .planContent .plan-item-slider02 .infoItem .text{
+    width: calc(100% - 15.104vw);
+    font-size: 0.729vw;
+    line-height: 1.354vw;
+    font-weight: 500;
+}
+
+
+#plan-page .plan-item-slider03 .infoContent{
+    top: 190px;
+}
+#plan-page .plan-item-slider03 .infoContent .info-inner{
+    max-width: 980px;
+    margin: auto;
+}
+#plan-page .plan-item-slider03 .info-title .title-item{
+    position: absolute;
+    background: #D7092F;
+    color: #fff;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 500;
+    width: 80px;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    right: 0;
+    top: -190px;
+}
+#plan-page .plan-item-slider03 .infoList-vertical{
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical .ttl{
+    width: 64px;
+    background: #D7092F;
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    order: 2;
+    writing-mode: vertical-rl;
+    font-weight: 500;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical .ttl small{
+    font-size: 42px;
+    display: inline-block;
+    padding-bottom: 7px;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical .txtList{
+    width: calc(100% - 64px);
+    background: rgba(255,255,255,.80);
+    order: 1;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical .txtList .text{
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    writing-mode: vertical-rl;
+    max-height: 500px;
+    padding: 34px 22px;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical:nth-child(1) .txtList .text{
+    letter-spacing: 4px;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical:nth-child(4) .ttl{
+    padding-top: 32px;
+    letter-spacing: 2px;
+    padding-bottom: 28px;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical:nth-child(3) .ttl{
+    padding-top: 40px;
+    letter-spacing: 2px;
+    padding-bottom: 38px;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical:nth-child(2) .ttl{
+    padding-top: 0px;
+    letter-spacing: 2px;
+    padding-bottom: 78px;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical:nth-child(2) .ttl small:nth-child(2){
+    margin-bottom: -19px;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical:nth-child(1) .ttl{
+    padding-top: 15px;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+}
+#plan-page .plan-item-slider03 .infoItem-vertical:nth-child(1) .ttl small:nth-child(2){
+    margin-bottom: -17px;
+}
+
+
+#plan-page .plan-item-slider04 .infoContent .info-inner{
+    max-width: 1052px;
+    margin: auto;
+}
+#plan-page .plan-item-slider04 .infoContent{
+    top: 157px;
+    padding-left: 11px;
+}
+#plan-page .plan-item-slider04 .infoList-half{
+    display: flex;
+    flex-wrap: wrap;
+}
+#plan-page .plan-item-slider04 .leftContent{
+    width: 54.4%;
+}
+#plan-page .plan-item-slider04 .rightContent{
+    width: calc(45.6% - 30px);
+    margin-left: 30px;
+}
+#plan-page .plan-item-slider04 .infoItem-half .info{
+    background: rgba(255,255,255,.80);
+    padding: 20px 25px 29px 30px;
+}
+#plan-page .plan-item-slider04 .title-item{
+    font-size: 46px;
+    line-height: 68px;
+    background: #D7092F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    width: calc(100% - 50px);
+    margin: auto;
+    height: 80px;
+}
+#plan-page .plan-item-slider04 .infoItem-half .info dl{
+    margin-bottom: 9px;
+}
+#plan-page .plan-item-slider04 .infoItem-half .info dl:last-child{
+    margin-bottom: 0;
+}
+#plan-page .plan-item-slider04 .infoItem-half .info dt{
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 9px;
+}
+#plan-page .plan-item-slider04 .infoItem-half .info dt:after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    border-bottom: 1px solid #D7092F;
+    bottom: 0px;
+    left: 0;
+}
+#plan-page .plan-item-slider04 .infoItem-half .info dd{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+#plan-page .plan-item-slider04 .infoItem-half .info dl:nth-child(2) dd{
+    padding-right: 5px;
+}
+#plan-page .plan-item-slider04 .infoItem-half:nth-child(2) .info{
+    padding: 29px 30px 40px 30px;
+}
+#plan-page .plan-item-slider04 .rightContent .number-info .ttl{
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 500;
+    text-align: center;
+}
+#plan-page .plan-item-slider04 .rightContent .number-info .text{
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#plan-page .plan-item-slider04 .rightContent .number-info{
+    margin-bottom: 32px;
+}
+#plan-page .plan-item-slider04 .rightContent .number-info:last-child{
+    margin-bottom: 0;
+}
+#plan-page .plan-item-slider04 .rightContent .number-info .text .number{
+    font-size: 72px;
+    font-family: "futura-pt", sans-serif;
+    display: inline-block;
+    padding-right: 10px;
+    position: relative;
+    bottom: -3px;
+}
+
+
+
+
+#plan-page .action-bottom{
+    height: 136px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding-top: 58px;
+}
+#plan-page .action-bottom .action-bottomInner{
+    max-width: 1086px;
+    margin: auto;
+    position: relative;
+    background-image: url("../images/plan/bg_bottom_pc.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#plan-page .action-bottom .swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    opacity: 1;
+    position: relative;
+    background-repeat: no-repeat;
+}
+#plan-page .action-bottom .swiper-pagination{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 66px;
+}
+#plan-page .action-bottom .swiper-pagination-clickable .swiper-pagination-bullet:nth-child(1){
+    background-image: url("https://kokorozashi1997.co.jp/wp-content/uploads/plan_chapter_sign01@2x.png");
+    width: 64px;
+    height: 74px;
+    background-size: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    top: -31px;
+}
+#plan-page .action-bottom .swiper-pagination-clickable .swiper-pagination-bullet:nth-child(2){
+    background-image: url("https://kokorozashi1997.co.jp/wp-content/uploads/plan_chapter_sign02@2x.png");
+    width: 64px;
+    height: 74px;
+    background-size: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    top: -25px;
+    left: 5px;
+}
+#plan-page .action-bottom .swiper-pagination-clickable .swiper-pagination-bullet:nth-child(3){
+    background-image: url("https://kokorozashi1997.co.jp/wp-content/uploads/plan_chapter_sign03@2x.png");
+    width: 64px;
+    height: 74px;
+    background-size: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    top: -35px;
+    left: 2px;
+}
+#plan-page .action-bottom .swiper-pagination-clickable .swiper-pagination-bullet:nth-child(4){
+    background-image: url("https://kokorozashi1997.co.jp/wp-content/uploads/plan_chapter_sign04@2x.png");
+    width: 64px;
+    height: 74px;
+    background-size: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    top: -20px;
+}
+#plan-page .action-bottom .swiper-pagination-clickable .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    filter: hue-rotate(90deg);
+}
+#plan-page .action-bottom .plan-truck-illust{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 2;
+}
+#plan-page .action-bottom .plan-chapter-truck {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+#plan-page .plan-btnSlider{
+    width: 132px;
+    height: 64px;
+    position: absolute;
+    background: url("https://kokorozashi1997.co.jp/wp-content/uploads/plan_direction_btn_bg@2x.png") no-repeat center center / contain;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    top: -63px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    padding-top: 7px;
+}
+#plan-page .plan-btnSlider button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#plan-page .plan-btnSlider button:hover{
+    opacity: .7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
